@@ -1,0 +1,6 @@
+@mixin footer($backroundcolor, $color, $width){
+    background-color: $backroundcolor;
+    color:$color;
+    
+    width:$width;
+}

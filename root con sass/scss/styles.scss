@@ -1,0 +1,38 @@
+@import"base";
+@import "maps";
+@import "extend";
+
+header{
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: row;
+    margin: 25px;
+    align-items: center;
+    height: $ancho;
+    ul{
+        li{
+            list-style-type: none;
+            width: $ancho;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 30px;
+        }
+    }
+    }
+    .area1{
+        @extend %flexrowmargin;
+    }
+    .area2{
+        @extend %flexrowmargin;
+    }
+    .area3{
+        @extend %flexrowmargin;
+    }
+    footer{
+        background-color: map-get($estilofooter, colorfondo);
+        color: map-get($estilofooter,color);
+        font-family:map-get($estilofooter,font-family);
+        width:map-get($estilofooter ,ancho);
+    }
